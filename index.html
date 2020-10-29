@@ -1,7 +1,7 @@
 <!--
  * @Author: Akko
  * @Date: 2020-10-29 16:44:01
- * @LastEditTime: 2020-10-29 16:50:38
+ * @LastEditTime: 2020-10-30 00:22:15
  * @LastEditors: Akko
  * @Description: 基于HTML+JS+CSS的网页计算器
  * @FilePath: /WebCalculator/index.html
@@ -9,15 +9,37 @@
 -->
 <!DOCTYPE html>
 <html lang="zh-cn">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>Web Calculator</title>
-        <link rel="stylesheet" href="./mystyle.css">
-        <link rel="stylesheet" href="./myscript.js">
-    </head>
-    <body>
-        <div class="container">
-            <i></i>
-        </div>
-    </body>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="./mystyle.css">
+    <!-- <script src="./myscript.js"></script> -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- <i></i> -->
+    </div>
+    <script>
+        function rand(m, n) {
+            return Math.ceil(Math.random() * (n - m + 1)) + m - 1;
+        }
+
+        /*背景光线部分*/
+        let num = 40; //光线总数
+        for (let i = 0; i < num; i++) {
+            /*创建i标签*/
+            const i = document.createElement('i');
+            /*设置样式*/
+            i.style.height = rand(30, 100) + 'px';
+            i.style.left = rand(1, 99) + 'vw';
+            /*随机动画周期*/
+            i.style.animationDuration = rand(5, 30) / 10 + 's';
+            /*将i插入到container元素中*/
+            document.querySelector('.container').appendChild(i);
+        }
+    </script>
+</body>
+
 </html>
