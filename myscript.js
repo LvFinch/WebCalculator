@@ -1,7 +1,7 @@
 /*
  * @Author: Akko
  * @Date: 2020-10-29 16:44:37
- * @LastEditTime: 2020-10-30 00:13:26
+ * @LastEditTime: 2020-11-01 21:23:22
  * @LastEditors: Akko
  * @Description: 
  * @FilePath: /WebCalculator/myscript.js
@@ -21,7 +21,8 @@ for (let i = 0; i < num; i++) {
     i.style.height = rand(30, 100) + 'px';
     i.style.left = rand(1, 99) + 'vw';
     /*随机动画周期*/
-    i.style.animationDuration = rand(5, 30) / 10 + 's';
+    // i.style.animationDuration = rand(5, 30) / 100 + 's';
+    // i.style.animationDuration = 50 +'s';
     /*将i插入到container元素中*/
     document.querySelector('.container').appendChild(i);
 }
