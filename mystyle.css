@@ -1,14 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+/* 背景设置 */
+div.container {
     height: 100vh;
     background-color: black;
 }
 
-.container i{
+div.container i {
     width: 1px;
     height: 10px;
     position: absolute;
@@ -18,11 +19,52 @@
     animation: line 2s linear infinite;
 }
 
-@keyframes line{
-    from{
+@keyframes line {
+    from {
         transform: translateY(0);
     }
-    to{
+
+    to {
         transform: translateY(90vh);
     }
+}
+
+/* 页面设置 */
+div.index_page {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 80%;
+    width: 70%;
+    margin-left: 10%;
+    margin-top: 6%;
+    float: left;
+    display: block;
+    position: absolute;
+}
+
+/* 标题区设置 */
+div.navbar {
+    background-color: white;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+h1.title {
+    text-align: center;
+}
+
+p.subtitle {
+    text-align: center;
+}
+
+/* 主页面设置 */
+div.home{
+    background-color: red;
+    width: 80%;
+    height: 80%;
+    margin-top: 30px;
+    border-radius: 30px;
+    display: block;
+    position: absolute;
 }
