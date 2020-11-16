@@ -29,42 +29,14 @@ div.container i {
     }
 }
 
-/* 页面设置 */
-div.index_page {
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 80%;
-    width: 70%;
-    margin-left: 10%;
-    margin-top: 6%;
-    float: left;
-    display: block;
-    position: absolute;
-}
-
-/* 标题区设置 */
-div.navbar {
-    background-color: white;
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-}
-
-h1.title {
+h1{
+    color: white;
     text-align: center;
+    padding-top: 45vh;
 }
 
-p.subtitle {
+h2{
+    color: white;
     text-align: center;
-}
-
-/* 主页面设置 */
-div.home{
-    background-color: red;
-    width: 80%;
-    height: 80%;
-    margin-top: 30px;
-    border-radius: 30px;
-    display: block;
-    position: absolute;
+    padding-top: 5vh;
 }
